@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(pigeon_data)
         if pigeon_list[name][property] #if property in list, do next line, else line 11
           pigeon_list[name][property] << values.to_s #adds value of property to name
         else 
-          pigeon_list[name][property] = [values.to_s] #adds property/value to hash
+          pigeon_list[name][property] = [values.to_s] #adds property/value-array to hash
         end 
       else 
         pigeon_list[name] = { property => [values.to_s] } #adds name hash and key/value (property/values)
